@@ -1,0 +1,21 @@
+<ion-view view-title="Hypertension Manager">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+  <ion-content class="padding">
+    <form id="logUform" ng-controller="loginCtrl">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="pass">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="submit()">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

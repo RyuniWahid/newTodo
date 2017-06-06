@@ -1,0 +1,84 @@
+
+/* main styles
+===========================*/
+
+#navside {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  width: 350px;
+  height: 100%;
+  clear: both;
+  background-color: #0c0c0c;
+  padding: 0 40px;
+}
+
+#navside.hidden { visibility: hidden; }
+
+#navside.left {
+  left: 100%;
+  margin-left: 0px;
+  text-align: left;
+}
+
+#navside.right {
+  right: 100%;
+  margin-right: 0px;
+  text-align: right;
+}
+
+#navside ul {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  width: 100%;
+}
+
+#navside ul li a {
+  text-decoration: none;
+  display: block;
+  color: #666;
+  line-height: 36px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-property: color;
+  -moz-transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-property: color;
+  -ms-transition-duration: 0.1s;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-property: color;
+  -o-transition-duration: 0.1s;
+  -o-transition-timing-function: ease-out;
+  transition-property: color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  direction: ltr;
+}
+
+#navside ul li a:hover { color: #fff; }
+
+#icon { width: 140px; }
+
+#navside_icon {
+  z-index: 1000;
+  position: fixed;
+  top: 27px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #333333;
+  background: url(../images/icon.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+#navside_icon.hidden { visibility: hidden; }
+
+#navside_icon.right { right: 10px; }
+
+#navside_icon.left { left: 10px; }

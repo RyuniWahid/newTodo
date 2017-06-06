@@ -1,0 +1,25 @@
+<ion-view title="View Treatment Suggestion">
+    <ion-content class="padding" ng-controller="viewMedCtrl">
+    <form id="rawatform" name="rawatform">
+      <input class="button button-block button-positive" value="Pamer" style="width: 100px" ng-click="select()">
+      <div class="recTable" cache-view="false">
+        <div class="row">
+          <div class="col col-30">Age range:</div>
+          <div class="col col-30">BP Reading (Sys/Dia):</div>
+          <div class="col col-40">Treatment Suggestion:</div>
+         </div>
+         <div class="row" ng-repeat="item in alldata" id="tbl">
+          <div class="col col-30">{{item.selectAge}}</div>
+          <div class="col col-30">{{item.selectBP}}</div>
+          <div class="col col-40">{{item.rawat}}</div>
+        </div>
+        
+       <div align="center">
+        <a class="button button-calm" style="width: 100px" href="#/loginn/addMed">Add Treatment</a>
+      
+        <button class="button button-block button-positive" value="Back" style="width: 100px" ng-click="closeTodo()">Back</button>
+      </div>  
+    </form>
+    
+    </ion-content>
+</ion-view>

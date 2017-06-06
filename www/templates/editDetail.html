@@ -1,0 +1,46 @@
+<ion-view view-title="Change Detail">
+  <ion-content class="padding" ng-controller="EditCtrl">
+    <h1>Change Detail</h1>
+    <style>
+      .container {
+        margin: 100px 50px;
+        font-size: 20px;
+      }
+    </style>
+
+    <form id="editform" name="editform">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Age:</span>
+          <input type="text" placeholder="" ng-model="age">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Weight:</span>
+          <input type="text" placeholder="" ng-model="weight">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Height:</span>
+          <input type="text" placeholder="" ng-model="heights">
+        </label>
+        <h4>Write Y : Yes dan N : No</h4>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Have Diabetes?:</span>
+          <input type="text" placeholder="" ng-model="diabet">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Have Kidney Disease?:</span>
+          <input type="text" placeholder="" ng-model="kidney">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Have Heart Disease?:</span>
+          <input type="text" placeholder="" ng-model="heart">
+        </label>
+
+          <div align="center" data-role="main" class="ui-content">
+            <button class="button button-block button-positive" value="Save" style="width: 100px" ng-click="insert()">Save</button> 
+          </div>
+        
+      </div> 
+    </form>
+  </ion-content>
+</ion-view>

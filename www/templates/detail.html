@@ -1,0 +1,40 @@
+<ion-view view-title="Information Detail">
+  <ion-content class="padding">
+    <form id="detailform" name="detailform">
+      <button class="button button-block button-positive" value="View" style="width: 100px" ng-click="select()">View</button>
+      <div class="recTable" cache-view="false">
+        <div class="row">
+          <div class="col col-50">Age:</div>
+          <div class="col col-50"  ng-repeat="item in alldata" id ="tbl">{{item.age}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">Weight:</div>
+          <div class="col col-50" ng-repeat="item in alldata" id ="tbl">{{item.weight}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">Height:</div>
+          <div class="col col-50" ng-repeat="item in alldata" id ="tbl">{{item.heights}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">BMI:</div>
+          <div class="col col-10" ng-repeat="item in alldata" id ="tbl">{{item.bmi}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">Have Diabetes:</div>
+          <div class="col col-50" ng-repeat="item in alldata" id ="tbl">{{item.diabet}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">Have Kidney Disease:</div>
+          <div class="col col-50" ng-repeat="item in alldata" id ="tbl">{{item.kidney}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-50">Have Heart Disease:</div>
+          <div class="col col-50" ng-repeat="item in alldata" id ="tbl">{{item.heart}}</div>
+        </div>
+      </div>
+      <div align="center">
+        <a class="button button-calm" style="width: 100px" href="#/app/editDetail">Change Detail</a>
+      </div>  
+    </form>
+  </ion-content>
+</ion-view>

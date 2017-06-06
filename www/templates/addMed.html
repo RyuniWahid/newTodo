@@ -1,0 +1,26 @@
+<ion-view view-title="Add Treatment">
+    <ion-content class="padding" ng-controller="addMedCtrl">
+    
+    <form id="BPform" name="BPform">
+	    <div class="list">
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Age range:</span><br>
+	            <select ng-model="selectedAge" ng-options="x for x in ages"></select>
+	        </label>
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label"> BP Reading (Sys/Dia):</span><br>
+	            <select ng-model="selectedBP" ng-options="x for x in bps"></select>
+	        </label>
+	        
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Treatment</span>
+	            <input type="text" placeholder="" ng-model="rawat">
+	        </label>
+	    </div>
+	    <div align="center" data-role="main" class="ui-content">
+	    	<button class="button button-block button-positive" value="Save" style="width: 100px" ng-click="insert()">Save</button>
+	    	<button class="button button-block button-positive" value="Back" style="width: 100px" ng-click="closeTodo()">Back</button>  
+	    </div>
+    </form>
+  </ion-content>
+</ion-view>

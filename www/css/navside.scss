@@ -1,0 +1,73 @@
+/* main styles
+===========================*/
+#navside {
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	width: 350px;
+	height: 100%;
+	clear: both;
+	background-color: #0c0c0c;
+	padding: 0 40px;
+
+	.hidden{visibility: hidden;}
+	.left{left: 100%;margin-left: 0px;text-align: left;}
+	.right{right: 100%;margin-right: 0px;text-align: right;}
+
+}
+
+#navside ul {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  width: 100%;
+
+  li a {
+	text-decoration: none;
+	display: block;
+	color: #666;
+	line-height: 36px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.1s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.1s;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-property: color;
+	-ms-transition-duration: 0.1s;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-property: color;
+	-o-transition-duration: 0.1s;
+	-o-transition-timing-function: ease-out;
+	transition-property: color;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+	font-family: "Univers LT W10 57 Condensed";
+	direction: ltr;
+
+	&:hover {
+	  color: #fff;
+	}
+  }
+}
+
+
+#navside_icon {
+	z-index: 1000;
+	position: fixed;
+	top: 27px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAaCAYAAAA38EtuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdBJREFUeNrsmVFugkAQhoceg6qgJvUaYNL0Fn3tmfraU7Q+tDz1DtQqimgv0aQd9CdultVdlEQfZpI/wQWG5MvP7Ax6fxx0XeFd4Jk+64X1xJq1lHPIemY9sjaegN5CfmeNWCtW3ALsASthdVkpayygiV5ZD8rvEnbEmrcAuYo3AU0UAkzQAuwS8gerp6wty1ze9XG+SJhg5ygjrrD7yFGDzFrcCONtLAB1qaz14M7+GZBj5CYBvY8MYHINdmKB3TeUi+ptyKoFAV2HHRlgH3J2iHN6yYlUyALa3dkBgIaOdT2r7fCyGTbvIHCsgz/aqUh717wnXiiOdm4HBfRpsEmDbJ0mpUbbYw6QK8O5wnVkF9Bu8Qu5rpNshs0jsAwumWHYEUc3DFMPXUDHBhYB3RByYoA8hoMLywguoE908hqQp6xvHDs7W0DXowtgAw1yDMhVTAF7bRhyugLaDjlxgKzCjg2wa323DCx1Jw8N5eLLcu8d7f4Ou1XWZmr/LY4+DHnjCJlwjV5GhsjZEUfvooNXXYccO0LWnV3C9TVnRwKaaMK6Nzg5PTGfCfZEJsN9K1duYj9wcnpmzhFqtl99K5Eavf9Y/9kSZEKOsZIz/xdgAKh6su6uFJIDAAAAAElFTkSuQmCC');
+	background-position: 0 0;
+	cursor: pointer;
+
+	.hidden{visibility: hidden;}
+  	.right{right: 10px;}
+	.left{left: 10px;}
+}

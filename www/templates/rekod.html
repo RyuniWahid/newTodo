@@ -1,0 +1,46 @@
+<ion-view view-title="BP Reading Record">
+  <ion-content class="padding" ng-controller="RecordCtrl">
+    <h1>Blood Pressure Reading Record</h1>
+    <div class="list">
+      <div align="center">
+        <h4>(Self Monitoring)</h4>
+      </div>
+          
+    </div>
+    <div align="center">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Choose the record date:</span>
+        <input type="date" placeholder="" ng-model="alldata.datepick" class="from" >
+      </label>
+      <button class="button button-block button-positive" value="Pamer" style="width: 100px" ng-click="select()">View</button>
+
+      <div class="recTable" cache-view="false">
+        <div class="row">
+          <div class="col col-25">Time</div>
+          <div class="col col-25">Systolic</div>
+          <div class="col col-25">Diastolic</div>
+          <div class="col col-25">Pulse</div>
+        </div>
+        <div class="row" ng-repeat="item in alldata" id ="tbl">
+          <div class="col col-25">{{item.time}}</div>
+          <div class="col col-25">{{item.systolic}}</div>
+          <div class="col col-25">{{item.diastolic}}</div>
+          <div class="col col-25">{{item.pulse}}</div>
+
+        </div>
+      </div>
+      <div class="item item-divider">
+        <ul class="list">
+          <li class="item" id="displayLabel">
+            <div class="item item-text-wrap">
+              <a class="button button-block button-royal" href="#/app/share">
+                Share
+              </a>
+            </div>
+          </li>
+          
+        </ul>
+      </div>  
+    </div>
+  </ion-content>
+</ion-view>

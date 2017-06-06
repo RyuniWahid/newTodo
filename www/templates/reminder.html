@@ -1,0 +1,23 @@
+<ion-view view-title="Add Reminder">
+  <ion-content class="padding" ng-controller="alarmCtrl">
+    <h1>New Reminder</h1>
+    <form id="alarmform" name="alarmform">
+	    <div class="list">
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Date:</span>
+	            <input type="date" placeholder="" ng-model="alldata.datepick" class="from">
+	        </label>
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Title:</span>
+	            <input type="text" placeholder="" ng-model="title">
+	        </label>
+	    </div>
+	    <div align="center" data-role="main" class="ui-content">
+	        <button class="button button-block button-positive" value="Save" style="width: 100px" ng-click="insert()">Save</button>
+	        
+	        <button class="button button-block button-positive" value="View" style="width: 100px" ng-click="select()">View</button>
+	    </div>
+    </form>
+  </ion-content>
+</ion-view>
+

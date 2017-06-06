@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Bower
+bower_components
+
+#sass-cache
+.sass-cache
+
+# Fs
+.DS_Store
+
+# Misc
+.idea

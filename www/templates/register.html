@@ -1,0 +1,32 @@
+<ion-view view-title="Register">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+  <ion-content class="padding" ng-controller="signupCtrl">
+    <br>
+    <br>
+    <form ng-submit="submit()">
+      <div class="list" >
+        <label class="item item-input item-floating-label">
+          <span class="input-label"t>Name</span>
+          <input type="text" placeholder="Nama" ng-model="name">
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label"t>Email</span>
+          <input type="text" placeholder="email" ng-model="email">
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label"t>Password</span>
+          <input type="password" placeholder="Kata laluan" ng-model="pass">
+        </label>
+
+      </div>
+      <button class="button button-block button-positive" value="Register" style="width: 100px" ng-click="submit()">Register</button>
+    </form>
+
+  </ion-content>
+
+
+
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view view-title="Add BP Reading">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+  <ion-content class="padding" ng-controller="readBPCtlr">
+    <h1>Add BP Reading</h1>
+    <form id="BPform" name="BPform">
+	    <div class="list">
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Systolic (mmHg)</span>
+	            <input type="text" placeholder="120" ng-model="systolic">
+	        </label>
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Diastolic (mmHg)</span>
+	            <input type="text" placeholder="80" ng-model="diastolic">
+	        </label>
+	        <label class="item item-input item-stacked-label">
+	            <span class="input-label">Pulse (min)</span>
+	            <input type="text" placeholder="70" ng-model="pulse">
+	        </label>
+	    </div>
+	    <div align="center" data-role="main" class="ui-content"> 
+	        <button class="button button-block button-positive" value="Save" style="width: 100px" ng-click="insert()">Save</button>
+
+	        <button class="button button-block button-calm" type="submit" name="new" value="New" style="width: 100px" ng-click="BPForm.reset()">New</button>
+
+	    </div>
+    </form>
+  </ion-content>
+</ion-view>
+
